@@ -38,7 +38,7 @@ async def on_ready():
 
 @client.command()
 async def Atik(ctx):
-    tavsiyeler = ["Aynı zamanda salğıa zararlı olan fast food tüketimini azaltabilrsin"]
+    tavsiyeler = ["Aynı zamanda salğıa zararlı olan fast food tüketimini azaltabilrsin.", "Tek kullanımlık kaşık veya çatalları kullanmamayı tercih edebilirsin.", "Arta kalan yemekleri sokakta yemeği olmayanlara, hayvanlara verebilirsin veya mikro dalgada ısıtıp yiyebiliriz.", ]
     a = random.choice(tavsiyeler)
     await ctx.send(a)
     
