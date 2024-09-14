@@ -20,12 +20,12 @@ async def change_status():
 
 @bot.event
 async def on_ready():
-    channel = client.get_channel(1007625208443703366)
+    channel = bot.get_channel(1007625208443703366)
     await channel.send("Yor'ue Bluetooth Device Is Connected Successfully!")
     change_status.start()
 
     try:
-        synced_commands = await client.tree.sync()
+        synced_commands = await bot.tree.sync()
         print(f"Synced {len(synced_commands)} commands.")
     except Exception as e:
         print("An error with syncing application commands has occurred", e)
